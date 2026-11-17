@@ -13,27 +13,37 @@
 
 ## B. Preparar el repositorio local
 
-Abre la carpeta `CINEVERSE` en Visual Studio Code. Abre `Terminal > New Terminal` y ejecuta, una línea a la vez:
+El paquete `CINEVERSE_repo_local_listo.zip` ya incluye un repositorio Git inicializado y un primer commit. Después de descomprimirlo, abre la carpeta `CINEVERSE_primera_entrega` en Visual Studio Code y abre `Terminal > New Terminal`.
+
+Primero registra tu identidad de GitHub (reemplaza los valores por los tuyos):
 
 ```bash
-git init
-git add .
-git commit -m "Primera entrega: estructura HTML y estilos globales"
-git branch -M main
+git config user.name "Tu nombre"
+git config user.email "tu-correo-de-GitHub"
+git commit --amend --reset-author --no-edit
+```
+
+Esto actualiza el autor del primer commit para que GitHub lo asocie a tu cuenta si el correo coincide con uno verificado en GitHub.
+
+## C. Conectar y publicar en GitHub
+
+Copia la dirección HTTPS de tu repositorio. En la terminal ejecuta, una línea a la vez:
+
+```bash
 git remote add origin https://github.com/TU-USUARIO/CINEVERSE.git
 git push -u origin main
 ```
 
-Reemplaza `TU-USUARIO` por tu nombre de usuario de GitHub. Si Git pide autenticarte, completa el inicio de sesión en el navegador.
+Reemplaza `TU-USUARIO` por tu usuario de GitHub. Si Git pide autenticarte, completa el inicio de sesión en el navegador.
 
-## C. Comprobar la subida
+## D. Comprobar la subida
 
 1. Vuelve a la página del repositorio en GitHub.
 2. Actualiza la página.
 3. Debes ver `index.html`, las demás páginas, la carpeta `css`, `README.md` y `docs`.
 4. Abre `index.html` desde GitHub para comprobar que el archivo fue subido.
 
-## D. Actualizar después de realizar cambios
+## E. Actualizar después de realizar cambios
 
 Cada vez que modifiques el proyecto y quieras guardar una nueva versión:
 
