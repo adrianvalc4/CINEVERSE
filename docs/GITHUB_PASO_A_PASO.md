@@ -1,0 +1,46 @@
+# Publicar CINEVERSE en GitHub
+
+## A. Crear el repositorio en GitHub
+
+1. Inicia sesión en GitHub.
+2. Pulsa `+` y elige `New repository`.
+3. Escribe `CINEVERSE` como nombre.
+4. Añade una descripción: `Proyecto académico de sitio web de películas`.
+5. Selecciona `Public` o `Private` según indique el ingeniero.
+6. No marques `Add a README`, `.gitignore` ni licencia porque estos archivos ya existen en el proyecto local.
+7. Pulsa `Create repository`.
+8. Copia la dirección HTTPS que GitHub muestra, con esta forma: `https://github.com/TU-USUARIO/CINEVERSE.git`.
+
+## B. Preparar el repositorio local
+
+Abre la carpeta `CINEVERSE` en Visual Studio Code. Abre `Terminal > New Terminal` y ejecuta, una línea a la vez:
+
+```bash
+git init
+git add .
+git commit -m "Primera entrega: estructura HTML y estilos globales"
+git branch -M main
+git remote add origin https://github.com/TU-USUARIO/CINEVERSE.git
+git push -u origin main
+```
+
+Reemplaza `TU-USUARIO` por tu nombre de usuario de GitHub. Si Git pide autenticarte, completa el inicio de sesión en el navegador.
+
+## C. Comprobar la subida
+
+1. Vuelve a la página del repositorio en GitHub.
+2. Actualiza la página.
+3. Debes ver `index.html`, las demás páginas, la carpeta `css`, `README.md` y `docs`.
+4. Abre `index.html` desde GitHub para comprobar que el archivo fue subido.
+
+## D. Actualizar después de realizar cambios
+
+Cada vez que modifiques el proyecto y quieras guardar una nueva versión:
+
+```bash
+git add .
+git commit -m "Descripción breve del cambio"
+git push
+```
+
+`git add` prepara los cambios, `git commit` guarda una versión local y `git push` la sube al repositorio remoto.

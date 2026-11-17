@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CINEVERSE: descubre estrenos y películas populares.">
+  <title>CINEVERSE | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="CINEVERSE, página de inicio">
+        <span class="brand__cine">CINE</span><span class="brand__verse">VERSE</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Navegación principal">
+        <a class="nav-link nav-link--active" href="index.html" aria-current="page">Inicio</a>
+        <a class="nav-link" href="catalogo.html">Catálogo</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </nav>
+
+      <!-- Icono visual para móvil. Se programará en una etapa posterior. -->
+      <span class="menu-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow">TU UNIVERSO CINEMATOGRÁFICO</p>
+        <h1 id="hero-title">Cada película tiene una historia. <span>Encuentra la tuya.</span></h1>
+        <p class="hero__description">
+          Explora estrenos, descubre títulos populares y conoce más sobre tus películas favoritas.
+        </p>
+        <a class="button button--primary" href="catalogo.html">Explorar catálogo</a>
+      </div>
+      <div class="hero__art" aria-label="Área reservada para el póster de una película destacada" role="img">
+        <div class="hero__art-glow"></div>
+        <span class="hero__art-label">PELÍCULA DESTACADA</span>
+        <span class="hero__art-title">CINEVERSE</span>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="releases-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DESCUBRE ALGO NUEVO</p>
+          <h2 id="releases-title">Próximos estrenos</h2>
+        </div>
+        <span class="section-note">Contenido de muestra para la primera etapa</span>
+      </div>
+      <div class="movie-row">
+        <article class="movie-placeholder"><div class="poster poster--one"></div><h3>Película de muestra 01</h3><p>2026 · Ciencia ficción</p></article>
+        <article class="movie-placeholder"><div class="poster poster--two"></div><h3>Película de muestra 02</h3><p>2026 · Aventura</p></article>
+        <article class="movie-placeholder"><div class="poster poster--three"></div><h3>Película de muestra 03</h3><p>2025 · Drama</p></article>
+        <article class="movie-placeholder"><div class="poster poster--four"></div><h3>Película de muestra 04</h3><p>2025 · Suspenso</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">CINEVERSE</span>
+      <p>Proyecto académico de Programación Web · Primera entrega</p>
+    </div>
+  </footer>
+</body>
+</html>
