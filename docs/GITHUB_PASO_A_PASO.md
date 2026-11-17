@@ -15,15 +15,14 @@
 
 El paquete `CINEVERSE_repo_local_listo.zip` ya incluye un repositorio Git inicializado y un primer commit. Después de descomprimirlo, abre la carpeta `CINEVERSE_primera_entrega` en Visual Studio Code y abre `Terminal > New Terminal`.
 
-Primero registra tu identidad de GitHub (reemplaza los valores por los tuyos):
+Primero registra tu identidad de Git (reemplaza los valores por los tuyos). Esto se utilizará en los próximos commits que hagas:
 
 ```bash
 git config user.name "Tu nombre"
 git config user.email "tu-correo-de-GitHub"
-git commit --amend --reset-author --no-edit
 ```
 
-Esto actualiza el autor del primer commit para que GitHub lo asocie a tu cuenta si el correo coincide con uno verificado en GitHub.
+Los commits iniciales ya están guardados en el repositorio local. Esta configuración no es necesaria para subirlos, pero conviene dejarla lista para tus próximos cambios.
 
 ## C. Conectar y publicar en GitHub
 
